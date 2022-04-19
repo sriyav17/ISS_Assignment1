@@ -3,7 +3,7 @@ filesize=$(stat -c %s "$1")
 echo "File size = $filesize"
 numlines=$(wc -l < $1)
 echo "Number of lines = $numlines"
-numwords=$(wc -w < $1)
+numwords=$(wc -w < $1) 
 echo "Number of words = $numwords"
 i=1
 while [ $i -le $numlines ]
